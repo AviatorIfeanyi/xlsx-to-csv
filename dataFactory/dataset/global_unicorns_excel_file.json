@@ -1,0 +1,22 @@
+{
+	"name": "global_unicorns_excel_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Unicorns",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Global-Unicorns.xlsx",
+				"folderPath": "world-unicorns",
+				"fileSystem": "de-tasks"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
